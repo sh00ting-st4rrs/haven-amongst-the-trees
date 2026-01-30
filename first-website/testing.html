@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <title>my first website</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>!starr's home!</h1>
+        <h2>a place lost to the universe</h2>
+        <h3>unknown to most</h3>
+        <h4>but, home to one</h4>
+        <h5>the child of the stars</h5>
+        <h6>born from the lightest and darkest spaces in the universe</h6>
+        <hr>
+
+        <h2 class="special centered-text">hello world</h2>
+
+        <ul>
+            <li><a href="https://handmade-web.net/spring26/index.html">Handmade Web Class Site</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+
+        <search>
+            <form>
+                <input name="fsrch" id="fsrch" placeholder="search">
+            </form>
+        </search>
+
+        <!--the browser will ignore any spaces or linebreaks by default-->
+        <p><mark>Lorem ipsum</mark> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <img src="stardust_875x500px.jpg" alt="home"width="50"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <br>
+        <br>
+        <i>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        <hr>
+    
+        <h2>what is in this space</h2>
+        <ul>
+            <li>stardust</li>
+            <li>memories</li>
+            <li>& dreams</li>
+        </ul>
+
+        <h2>how does this space exist</h2>
+        <ol>
+            <li>the gods</li>
+            <li>the will of the mind</li>
+            <li>& hope</li>
+        </ol>
+        <h1><s>welcome to the show</s></h1>
+
+        <canvas id="myCanvas">
+        </canvas>
+
+        <script>
+        let c = document.getElementById("myCanvas");
+        let ctx = c.getContext("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(20, 20, 75, 50);
+        //Turn transparency on
+        ctx.globalAlpha = 0.2;
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 75, 50);
+        ctx.fillStyle = "green";
+        ctx.fillRect(80, 80, 75, 50); 
+        </script>
+    
+
+        <hr>
+        <br>
+        <img src="stardust_875x500px.jpg" alt="home"width="300">
+        <img src="stardust_875x500px.jpg" alt="home"width="200">
+        <img src="stardust_875x500px.jpg" alt="home"width="100">
+    </body>
+</html>
