@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(231, 253, 231);
+    background-color:rgb(194, 237, 194);
 }
 
 p {
@@ -22,7 +22,7 @@ p {
     opt + sift + a for alternative comment shortcut
 */
 h1 {
-    background-color:midnightblue; color:cornflowerblue; border: dashed 7px cornflowerblue;
+    background-color:seagreen; color:lightgreen; border: double 7px lightgreen;
     font-size:50px;
     text-align:center;
     padding:20px 10px 20px 10px;
@@ -41,12 +41,19 @@ h1 {
 }
 
 
-
+/* CARDS */
 
 .card {
     width: 200px;
     height: 250px;
     perspective: 1000px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-items: center;
 }
 
 .card-front,
