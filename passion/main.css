@@ -1,11 +1,16 @@
 body {
     background-color:rgb(194, 237, 194);
+    font-family: "sansserif", sans-serif;
 }
 
 p {
-    background-color:deeppink; color:lemonchiffon;
-    border: dotted 15px hotpink; text-align:center;
-    padding:15px;
+    background-color:seagreen; color:lightgreen;
+    border: double 7px lightgreen; text-align:center;
+    padding:15px; border-radius: 25px;
+}
+
+h3 {
+    text-align:center;
 }
 /*
     for padding:
@@ -25,9 +30,13 @@ h1 {
     background-color:seagreen; color:lightgreen; border: double 7px lightgreen;
     font-size:50px;
     text-align:center;
-    padding:20px 10px 20px 10px;
+    display: inline-block;
+    padding:20px;
     margin: 50px;
     border-radius: 25px;
+
+    font-family: "plantfont", serif;
+    font-size: 5rem;
 }
 
 .special {
@@ -43,16 +52,29 @@ h1 {
 
 /* CARDS */
 
+
 .card {
     width: 200px;
-    height: 250px;
+    height: 200px;
     perspective: 1000px;
+}
+
+.card {
+    border-radius: 25px;
+    overflow: hidden;
+    background: rgb(194, 237, 194);
+}
+
+.card-content {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: transparent;
 }
 
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
+    gap: 4rem;
     justify-items: center;
 }
 
@@ -73,4 +95,27 @@ h1 {
 
 .card:hover .card-back {
     transform: rotateY(0deg);
+}
+
+
+/* FONTS */
+
+@font-face {
+    font-family: "plantfont";
+    src: url("fonts/plantfont.woff2") format("woff2"),
+        url("fonts/plantfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "SansSerif";
+    src: url("fonts/sansserif.woff2") format("woff2"),
+       url("fonts/sansserif.woff") format("woff");
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    display: inline-block;
 }
